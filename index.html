@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Movies</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <div class="header">
+        <div class="grid grid__header">
+            <div class="header__body">
+                <div class="header__body--content">
+                    <div class="logo__control">
+                        <a href="index.html"><img class="header--icon" src="http://tvonline.vn/wp-content/uploads/2018/07/large_foxmovies.png" alt=""></a>
+                        <button id="menuControl" class="logo__control--btn"><i class="fas fa-bars"></i></button>
+                    </div>
+                    <ul class="header__body--content__box" id="menuOpen">
+                        <li class="header__body--content__list">
+                            <a href="" class="header__body--content__link">Home</a>
+                        </li>
+                        <li class="header__body--content__list">
+                            <a href="" class="header__body--content__link">Movies</a>
+                        </li>
+                        <li class="header__body--content__list">
+                            <a href="" class="header__body--content__link">TV Shows</a>
+                        </li>
+                    </ul>
+                    <div class="header__body--content__search">
+                        <input type="text" class="header__body--content__input" placeholder="Search">
+                        <button class="header__body--content__btn">Search</button>
+                    </div>
+                    <div class="header__body--user">
+                        <ul class="header__body--user__box">
+                            <li class="header__body--user__list">
+                                <a href="" class="header__body--user__link"><i class="fas fa-user icon-header"></i>Sign Up</a>
+                            </li>
+                            <li class="header__body--user__list">
+                                <a href="" class="header__body--user__link"><i class="fas fa-sign-in-alt icon-header"></i>login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div id="gridDown" class="grid">
+            <div class="banner__container" id="bannerDown">
+                <div class="slide">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                            <img class="banner_img fade"
+                                src="https://bizweb.dktcdn.net/100/064/189/files/john-wick-2-guns.jpg?v=1495535389327">
+                            <div class="banner__text">
+                                <h1 class="banner__movie--name">John Wich (Chapter 3)</h1>
+                                <div class="banner__move--FI">
+                                    <h3 class="movie--format">2K .Bluray</h3>
+                                    <h3 class="movie--imDb movie--format imDb">IMDb 7.5</h3>
+                                </div>
+                                <h2 class="banner__movie--introduce">
+                                    Sau khi trở thành "giải thưởng lớn" của giới sát thủ toàn cầu, siêu sát thủ John Wick phải cùng chú chó cưng lên đường chạy trốn. Với giá 14 triệu $, John Wick trở thành mục tiêu béo bở của bất cứ kẻ săn đầu người nào.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="banner_img fade"
+                                src="https://www.joblo.com/resizer/resizer.php?file=/assets/images/joblo/news/2021/04/army-of-the-dead-zack-snyder-character-posters.jpg&height=650&width=1416.3484486874&action=resize">
+                            <div class="banner__text">
+                                <h1 class="banner__movie--name">Army of The Dead</h1>
+                                <div class="banner__move--FI">
+                                    <h3 class="movie--format">1080 .Bluray</h3>
+                                    <h3 class="movie--imDb movie--format imDb">IMDb 6.5</h3>
+                                </div>
+                                <h2 class="banner__movie--introduce">
+                                    Khi zombie lan tràn ở Las Vegas, một nhóm lính đánh thuê quyết định chơi canh bạc cuối khi mạo hiểm tiến vào khu cách ly để thực hiện vụ trộm lớn nhất từ trước đến nay.
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="banner_img fade"
+                                src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-banner-pic/67a027445fcf634d8580084b53c03c0e.jpg">
+                            <div class="banner__text">
+                                <h1 class="banner__movie--name">Wrath of Man (2021)</h1>
+                                <div class="banner__move--FI">
+                                    <h3 class="movie--format">4K .Bluray</h3>
+                                    <h3 class="movie--imDb movie--format imDb">IMDb 7.2</h3>
+                                </div>
+                                <h2 class="banner__movie--introduce">
+                                    The plot follows H, a cold and mysterious character working at a cash truck company responsible for moving hundreds of millions of dollars around Los Angeles each week.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="dot-list" style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid" style="padding: 0px 8px;">
+        <div class="banner__container--free">
+            <h1 style="font-size: 1.8rem; font-weight: 700; line-height: 21px; color: var(--btn--color); margin-bottom: 3px;">FoxMovies.la - FMovies - FMovies Watch Movies, Tv Show Online</h1>
+            <h1 style="font-size: 1.4rem; font-weight: 600; color: #9a9a9a;">Watch high quality movies online for free !</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="grid">
+            <span class="content__feature">Feature Movie</span>
+            <div class="grid__row">
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://fcine.net/uploads/monthly_2021_05/MV5BNGY0NzgzYzctYWQwMC00MzM2LThjNGMtZjFjMWUyNzg0ZmM0XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg.57840bbcede6b1476fef3c1d299e8645.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">HD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Army of The Dead (2021)</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2qwertyuiopasdfhjlzxnm,</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2qwertyuiopasdfhjlzxnm,</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2qwertyuiopasdfhjlzxnm,</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2qwertyuiopasdfhjlzxnm,</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2qwertyuiopasdfhjlzxnm,</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="movie.html" class="grid__column-2-8 content__poster">
+                    <div class="content__poster--img"
+                        style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/81GQpZ7kBdL._AC_SL1500_.jpg);">
+                        <div class="content__poster--title">
+                            <div class="content__poster--img__format">
+                                <span class="format__text">FHD</span>
+                            </div>
+                            <div class="content__poster--img__play">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="content__poster--img__name">Jonh Wich-chapter 2qwertyuiopasdfhjlzxnm,</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="content__page">
+                <div class="content__page--box">
+                    <button class="btn__page"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn__page">1</button>
+                    <button class="btn__page">2</button>
+                    <button class="btn__page">3</button>
+                    <button class="btn__page">4</button>
+                    <button class="btn__page"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__container">
+            <img class="header--icon" src="http://tvonline.vn/wp-content/uploads/2018/07/large_foxmovies.png" alt="">
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

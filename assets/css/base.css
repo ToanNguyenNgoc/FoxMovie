@@ -1,0 +1,89 @@
+:root{
+    --black-color: black;
+    --white-color: white;
+    --primary-color: #1E2129;
+    --btn--color: #00acc1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primary-color);
+}
+.btn{
+    background-color: var(--btn--color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 7px 7px;
+    color: var(--white-color);
+    margin: 0px 4px;
+}
+.grid{
+    width: 1244px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    transition: 0.7s;
+}
+.grid__down{
+    padding: 0px 0px;
+    transition: 0.7s;
+    margin-top: 280px;
+}
+.grid__row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 24px;
+    width: 100%;
+}
+.grid__column-12{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+.grid__column-2-8{
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 16.666%;
+    margin-bottom: 16px;
+}
+/* Tablet */
+@media only screen and (min-width: 901px) and (max-width: 1175px){
+    .grid__column-2-8{
+        padding: 0px 0px 0px 4px;
+        width: 20%;
+        margin-bottom: 16px;
+    }
+}
+@media only screen and (min-width: 740px) and (max-width: 900px){
+    .grid__column-2-8{
+        padding: 0px 0px 0px 4px;
+        width: 25%;
+        margin-bottom: 16px;
+    }
+}
+/* reposive mobiel */
+@media only screen and (max-width: 739px){
+    html{
+        font-size: 62.5%;
+        line-height: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+    }
+    .grid__column-2-8{
+        padding: 8px 8px;
+        width: 50%;
+        margin-bottom: 16px;
+    }
+}
